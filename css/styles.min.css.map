@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/styles.scss",
+        "../scss/base/_base.scss",
+        "../scss/utils/_variables.scss",
+        "../scss/utils/_mixins.scss",
+        "../scss/layouts/_footer.scss",
+        "../scss/layouts/_header.scss",
+        "../scss/pages/_index.scss",
+        "../scss/pages/_restaurants.scss"
+    ],
+    "names": [],
+    "file": "styles.min.css"
+}
