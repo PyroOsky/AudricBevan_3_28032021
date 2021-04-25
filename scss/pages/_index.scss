@@ -28,7 +28,7 @@
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
   animation: loading-screen 0.01s;
-  animation-delay: 1.75s;
+  animation-delay: 2s;
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
@@ -39,27 +39,28 @@
     height: 1rem;
     width: 20rem;
     border-radius: 1rem;
-    animation: icon-jump 1s;
-    animation-iteration-count: 1;
+    animation: icon-jump 1.75s;
+    animation-iteration-count: 2;
 
     &__wrap {
       display: flex;
+      margin-left: 3rem;
       width: 20rem;
       justify-content: space-between;
     }
 
-    &--1 {
+    &__burger {
       font-size: 3rem;
       color: $color-primary;
     }
 
-    &--2 {
+    &__hotdog {
       font-size: 3rem;
       color: $color-secondary;
       animation-delay: 0.25s;
     }
 
-    &--3 {
+    &__pizza {
       font-size: 3rem;
       color: $color-tertiary;
       animation-delay: 0.5s;
@@ -270,9 +271,6 @@
 
     &__subtitle {
       margin: 0;
-    }
-
-    &__button {
     }
 
     &__fav {
