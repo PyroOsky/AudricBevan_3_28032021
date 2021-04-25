@@ -109,7 +109,7 @@
 
   &__confirmation {
     background-color: $color-tertiary;
-    margin: -1rem -1rem -2.2rem 2rem;
+    margin: -1rem 2rem -2.2rem -1.4rem;
     width: 5rem;
     display: flex;
     align-items: center;
@@ -141,7 +141,7 @@
   &__content {
     padding: 1rem;
     display: grid;
-    grid-template: 1fr 1fr / 6fr 1fr;
+    grid-template: 1fr 1fr / 90% 10%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
