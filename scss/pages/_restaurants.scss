@@ -85,6 +85,15 @@
   }
 }
 
+@keyframes back-motion {
+  0% {
+    transform: translateX(2rem);
+  }
+  100% {
+    transform: translateX(-2rem);
+  }
+}
+
 .dish {
   background-color: white;
   border-radius: 0.75rem;
@@ -104,13 +113,14 @@
     background-color: $color-tertiary;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     width: 0;
     transition: 0.5s;
   }
 
   &__icon {
     color: $color-tertiary;
+    margin-left: 1.6rem;
     height: 1.6rem;
     width: 1.6rem;
     background-color: white;
@@ -118,16 +128,17 @@
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    transform: rotate(90deg);
-    transition: 0.5s;
   }
 
   &:hover &__icon {
     transform: rotate(360deg);
+    margin-left: 0rem;
+    transition: 0.5s;
   }
 
   &:hover &__confirmation {
     width: 5rem;
+    justify-content: center;
   }
 
   &__content {
