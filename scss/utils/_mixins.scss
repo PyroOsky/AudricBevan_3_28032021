@@ -1,0 +1,17 @@
+@mixin list-breakpoint {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin submenus-breakpoint {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin cards-breakpoint {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
