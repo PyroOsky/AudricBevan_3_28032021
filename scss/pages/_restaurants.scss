@@ -85,15 +85,6 @@
   }
 }
 
-@keyframes back-motion {
-  0% {
-    transform: translateX(2rem);
-  }
-  100% {
-    transform: translateX(-2rem);
-  }
-}
-
 .dish {
   background-color: white;
   border-radius: 0.75rem;
@@ -113,14 +104,14 @@
     background-color: $color-tertiary;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     width: 0;
     transition: 0.5s;
   }
 
   &__icon {
     color: $color-tertiary;
-    margin-left: 1.6rem;
+    margin-left: 1rem;
     height: 1.6rem;
     width: 1.6rem;
     background-color: white;

@@ -145,54 +145,63 @@
     @include list-breakpoint {
       display: flex;
     }
-  }
 
-  &__step {
-    padding: 1.5rem;
-    margin: 1rem 0 1rem 0.75rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
-    background-color: #f6f6f6;
-    display: flex;
-    position: relative;
+    &__step {
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.75rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      border-radius: 1.25rem;
+      background-color: #f6f6f6;
+      display: flex;
+      position: relative;
+      transition: ease-in-out 0.5s;
 
-    @include list-breakpoint {
-      flex: 1;
-      margin: 0;
-      margin-left: 2rem;
+      @include list-breakpoint {
+        flex: 1;
+        margin: 0;
+        margin-left: 2rem;
+
+        &:first-child {
+          margin-left: 0.75rem;
+        }
+      }
 
       &:first-child {
-        margin-left: 0.75rem;
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        counter-increment: list-count 1;
+        content: counter(list-count) " ";
+        background: $color-primary;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 6.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        left: -0.75rem;
+      }
+
+      &__icon {
+        margin-right: 1rem;
+        color: #7e7e7e;
+      }
+
+      &:hover &__icon {
+        color: $color-primary;
+      }
+
+      &:hover {
+        background-color: lighten($color: $color-primary, $amount: 35);
       }
     }
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &::before {
-      counter-increment: list-count 1;
-      content: counter(list-count) " ";
-      background: $color-primary;
-      height: 1.5rem;
-      width: 1.5rem;
-      border-radius: 6.25rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      position: absolute;
-      left: -0.75rem;
-    }
-  }
-
-  &__icon {
-    margin-right: 1rem;
-    color: #7e7e7e;
   }
 }
 
